@@ -24,6 +24,7 @@ allocator.deallocate(p, 10);
 cmm::Malloc<int> allocator;
 int *p = allocator.allocate(10);
 allocator.deallocate(p, 10);
+```
 
 ```c++
 #include "cmm/cmm.hpp"
@@ -37,4 +38,3 @@ allocator.deallocate(p, 10);
 
 - [ ] bind allocators to CUDA devices (Allocators do not have to be stateless starting with C++11)
 - [ ] A [low-level device allocator](https://devblogs.nvidia.com/introducing-low-level-gpu-virtual-memory-management/)
-
