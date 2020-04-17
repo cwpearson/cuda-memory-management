@@ -26,7 +26,7 @@ sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/
 if [[ $TRAVIS_CPU_ARCH == "ppc64le" ]]; then
     CUDA102="https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/ppc64el/cuda-repo-ubuntu1804_10.1.243-1_ppc64el.deb"
 elif [[ $TRAVIS_CPU_ARCH == "amd64" ]]; then
-    CUDA102="https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/ppc64el/cuda-repo-ubuntu1804_10.2.89-1_ppc64el.deb"
+    CUDA102="https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.2.89-1_amd64.deb"
 fi
 
 wget -SL $CUDA102 -O cuda.deb
